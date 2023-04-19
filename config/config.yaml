@@ -1,0 +1,86 @@
+raw_dataset_dir: data/raw/
+raw_dataset_path: data/processed/raw_dataset.pkl
+cleaned_raw_dataset_path: data/processed/raw_dataset.pkl
+train_set_path: 
+- data/processed/x_train.pkl
+- data/processed/y_train.pkl
+valid_set_path:
+- data/processed/x_valid.pkl
+- data/processed/y_valid.pkl
+test_set_path:
+- data/processed/x_test.pkl
+- data/processed/y_test.pkl
+train_feng_set_path:
+- data/processed/x_train_feng.pkl
+- data/processed/y_train_feng.pkl
+valid_feng_set_path:
+- data/processed/x_valid_feng.pkl
+- data/processed/y_valid_feng.pkl
+test_feng_set_path:
+- data/processed/x_test_feng.pkl
+- data/processed/y_test_feng.pkl
+ohe_ContractRenewal_path: models/ohe_ContractRenewal.pkl
+ohe_DataPlan_path: models/ohe_DataPlan.pkl
+production_model_path: models/production_model.pkl
+le_encoder_path: models/le_encoder.pkl
+training_log_path: log/training_log.json
+
+# Debug related
+print_debug: true
+
+# Columns by data type related
+float64_columns:
+- Sales
+- Quantity
+- Discount
+- Profit
+
+object_columns:
+- Order ID
+- Ship Mode
+- Customer ID
+- Customer Name
+- Segment
+- Country
+- City
+- State
+- Region
+- Product ID
+- Category
+- Sub-Category
+- Product Name
+
+# Predictors and label related
+label: Profit
+predictors:
+- Ship Mode
+- Customer ID
+- Customer Name
+- Segment
+- Country
+- City
+- State
+- Region
+- Product ID
+- Category
+- Sub-Category
+- Product Name
+- Sales
+- Quantity
+- Discount
+
+
+# Range of data related
+range_Quantity:
+- -999999999
+- 999999999
+range_Sales:
+- -999999999
+- 999999999
+range_Discount:
+- -999999999
+- 999999999
+range_Profit:
+- -999999999
+- 999999999
+
