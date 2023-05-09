@@ -260,8 +260,30 @@ Modeling and evaluation block diagram (modeling.py) - Blue
   # Parse the prediction result
       if res["error_msg"] != "":
           st.error("Error Occurs While Predicting: {}".format(res["error_msg"]))
-      else:
-          if res["res"] != "Ya":
-              st.warning("Prediksi Churn Customer: Tidak.")
-          else:
-              st.success("Prediksi Churn Customer: Ya.")
+      else: st.warning("Prediksi Profit: res["res"] ")
+
+ ```
+ 
+ Input data requirement for API
+ 
+      Ship_Mode : Standard Class
+      Customer_ID : PJ-18835
+      Customer_Name : Hospital-174
+      Segment : Hospital
+      Country : Indonesia
+      City : Sumatera Utara-431
+      State : Sumatera Utara
+      Region : Sumatera
+      Product_ID : AC-10004877
+      Category : Diabet
+      Sub_Category : Diabet/A
+      Product_Name : Diabet/AAC-10004877
+      Sales : 27.6
+      Quantity : 4
+      Discount : 0
+
+Response data of prediction
+      ```
+      Prediksi Profit: 5.208
+      ```
+      
